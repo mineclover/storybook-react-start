@@ -1,4 +1,3 @@
-import { useEffect } from '@storybook/addons'
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 
@@ -19,6 +18,7 @@ const NullStar = styled.div`
   color: ${(props) => (props.toggle ? 'black' : '#ccc')};
   transform: scale(1);
   transition: all 0.5s;
+  padding: 0 auto;
 
   &:hover {
     color: ${(props) => (props.toggle ? 'red' : '#ccc')};
